@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+
 const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
   const codespace = process.env.REACT_APP_CODESPACE_NAME;
@@ -19,11 +20,11 @@ const Workouts = () => {
   }, [endpoint]);
 
   return (
-    <div className="card mb-4">
+    <div className="card mb-4 shadow">
       <div className="card-body">
-        <h2 className="card-title display-6 mb-4">Workouts</h2>
+        <h2 className="card-title display-6 mb-4 text-danger">Workouts</h2>
         <div className="table-responsive">
-          <table className="table table-striped table-bordered">
+          <table className="table table-striped table-bordered align-middle">
             <thead className="table-light">
               <tr>
                 <th>#</th>
@@ -35,7 +36,7 @@ const Workouts = () => {
               {workouts.map((workout, idx) => (
                 <tr key={workout.id || idx}>
                   <td>{idx + 1}</td>
-                  <td>{workout.name}</td>
+                  <td><span className="fw-bold text-primary">{workout.name}</span></td>
                   <td>{workout.description}</td>
                 </tr>
               ))}
