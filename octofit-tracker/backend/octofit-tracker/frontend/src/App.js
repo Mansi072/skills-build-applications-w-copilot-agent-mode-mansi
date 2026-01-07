@@ -13,7 +13,7 @@ function App() {
       <nav className="navbar navbar-expand-lg navbar-light mb-4 shadow-sm">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex align-items-center" to="/">
-            <img src="https://octodex.github.com/images/original.png" alt="Octofit Logo" width="36" height="36" className="me-2" />
+            <img src="/octofitapp-small.png" alt="Octofit Logo" className="octofit-logo" />
             <span>Octofit Tracker</span>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
